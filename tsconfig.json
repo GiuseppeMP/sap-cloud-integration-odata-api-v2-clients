@@ -1,0 +1,37 @@
+{
+    "include": [
+        "src/**/*.ts",
+        "index.ts"
+    ],
+    "exclude": [
+        "dist/**/*",
+        "build/**/*",
+        "test/**/*",
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "node_modules/**/*"
+    ],
+    "compilerOptions": {
+        "noEmit": false,
+        "noImplicitReturns": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "declaration": true,
+        "paths": {
+            "~/*": [
+                "./src/*"
+            ]
+        },
+        "target": "es6",
+        "module": "commonjs",
+        "lib": [
+            "esnext"
+        ],
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true
+    }
+}

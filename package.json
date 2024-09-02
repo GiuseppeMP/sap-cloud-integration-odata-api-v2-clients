@@ -1,0 +1,82 @@
+{
+    "name": "ts-sap-cloud-odata-api-v2-client",
+    "version": "1.4.0",
+    "homepage": "https://github.com/GiuseppeMP/sap-cloud-integration-odata-api-v2-clients",
+    "author": "",
+    "type": "module",
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "description": "SAP Cloud Integration API Clients generated for Typescript",
+    "keywords": [
+        "typescript",
+        "sap",
+        "sap-cloud-sdk",
+        "sap-odata",
+        "odata",
+        "cpi"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        },
+        "./IntegrationContentClient": {
+            "types": "./dist/IntegrationContent/index.d.ts",
+            "import": "./dist/IntegrationContent/index.js",
+            "require": "./dist/IntegrationContent/index.js"
+        },
+        "./LogFilesClient": {
+            "types": "./dist/LogFiles/index.d.ts",
+            "import": "./dist/LogFiles/index.js",
+            "require": "./dist/LogFiles/index.js"
+        },
+        "./MessageProcessingLogsClient": {
+            "types": "./dist/MessageProcessingLogs/index.d.ts",
+            "import": "./dist/MessageProcessingLogs/index.js",
+            "require": "./dist/MessageProcessingLogs/index.js"
+        },
+        "./MessageStoreClient": {
+            "types": "./dist/MessageStore/index.d.ts",
+            "import": "./dist/MessageStore/index.js",
+            "require": "./dist/MessageStore/index.js"
+        },
+        "./PartnerDirectoryClient": {
+            "types": "./dist/PartnerDirectory/index.d.ts",
+            "import": "./dist/PartnerDirectory/index.js",
+            "require": "./dist/PartnerDirectory/index.js"
+        },
+        "./SecurityContentClient": {
+            "types": "./dist/SecurityContent/index.d.ts",
+            "import": "./dist/SecurityContent/index.js",
+            "require": "./dist/SecurityContent/index.js"
+        }
+    },
+    "files": [
+        "/dist",
+        "README.md"
+    ],
+    "scripts": {
+        "test": "npx jest",
+        "tsc": "rm -rf ./build ./dist ./node_modules/ && npm i && npx tsc",
+        "ci": "rm -rf ./build ./dist ./node_modules/ && npm i && npx tsup"
+    },
+    "dependencies": {
+        "@sap-cloud-sdk/odata-common": "^3.18.0",
+        "@sap-cloud-sdk/odata-v2": "^3.20.0",
+        "@types/node": "^22.2.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.4",
+        "tsup": "^8.2.4",
+        "typescript": "~4.5"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
