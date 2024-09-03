@@ -14,7 +14,7 @@ Process followed: https://sap.github.io/cloud-sdk/docs/js/features/odata/generat
 
 ## !! Disclaimer !!
 
-Do not use this library in a production environment as it is still in beta. The APIs and features covered have not changed in about two years, making them very stable.
+Do not use the npm-package in a production environment as it is still in beta. The APIs and features covered have not changed in about two years, making them very stable.
 
 The intention here is not to centralize all SAP CPI clients and maintain them into a micro-node module.
 
