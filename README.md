@@ -22,7 +22,8 @@ Regarding the npm package, you do not need to use it if it does not suit your ne
 
 It's just a code that can be used as quick start, example and to be copied.
 
-Use it wisely and do not rely on maintenance, just fork it.
+Use it wisely and do not rely on maintenance, just fork or clone it. So you can clone, open the project in any IDE and start playing with
+the sap-cloud-sdk-generator models.
 
 
 ## Why
