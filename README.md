@@ -12,6 +12,32 @@ Read more: https://sap.github.io/cloud-sdk/docs/js/getting-started
 
 Process followed: https://sap.github.io/cloud-sdk/docs/js/features/odata/generate-client
 
+## !! Disclaimer !!
+
+Do not use this library in a production environment as it is still in beta. The APIs and features covered have not changed in about two years, making them very stable.
+
+The intention here is not to centralize all SAP CPI clients and maintain them into a micro-node module.
+
+Regarding the npm package, you do not need to use it if it does not suit your needs. You can use the files in this repository as examples and copy the entire repository to your versioning system if you wish to make changes and tweaks. Any pull requests attempting to modify the generated code will not be accepted.
+
+It's just a code that can be used as quick start, example and to be copied.
+
+Use it wisely and do not rely on maintenance, just fork it.
+
+
+## Why
+
+This code was created with the help of the SAP Cloud SDK, there's no custom code or layers added to it. It's exactly the same output of
+using sap-cloud-sdk and generating clients from the odata package.
+
+The benefits of this package depends on the use case, right now I'm using it to, so pay attention to the Disclaimer section above.
+1. Automate the ingestion of logs from OData into DataLog automatically.
+2. Write xslts in external IDEs like VSCode using unit tests for mappings, them using the api in CD pipeline to push these artifacts to
+   low environment IFlows well tested and covered.
+4. Make it possible to create Pipeline for CI/CD that runs e2e automated and assert odata logs and also keep the IFlows external parameters
+   commited using GitOps approach.
+5. Internaly, it's easy to apply security scans and fixes in a centralized generated code them a distribuided approach across all teams. If you don't scan generated code for issues you may ignore this item.
+
 ## Features
 
 Clients were generated for the following APIs in [Cloud Integration](https://api.sap.com/package/CloudIntegrationAPI/odata):
